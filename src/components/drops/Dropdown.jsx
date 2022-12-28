@@ -55,8 +55,11 @@ const Dropdown = ({ title, positions, slug }) => {
                   }}
                 >
                   <div
-                    key={positions.indexOf(item)}
-                    className="border-b-2 border-b-f8 border-collapse px-2 text-left w-48 py-3 bg-white hover:bg-f8 text-sm font-sans"
+                    className={
+                      item.id === 666
+                        ? 'border-4 border-biruz border-collapse px-2 text-center w-48 py-3 bg-white hover:bg-f8 text-lg text-biruz  font-sans'
+                        : 'border-b-2 border-b-f8 border-collapse px-2 text-left w-48 py-3 bg-white hover:bg-f8 text-sm font-sans'
+                    }
                   >
                     {item.title}
                   </div>

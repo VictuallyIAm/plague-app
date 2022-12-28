@@ -84,6 +84,7 @@ const Plags = () => {
         {plags.items.map((plag) => {
           return (
             <PlagCard
+              plag={plag}
               key={plag.id}
               title={plag.title}
               price={plag.price}

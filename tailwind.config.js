@@ -21,6 +21,7 @@ module.exports = {
         textBlack: '#1d1d1b',
         overPurple: '#432048',
         bgGray: '#fefefe',
+        bgGray2: '#f2f2f2',
         bgFooter: '#fcfcfc',
         bgSlide: '#f8fbfb',
         textSlide: '#444444',
@@ -33,6 +34,7 @@ module.exports = {
       },
       backgroundImage: {
         map: "url('./data/map.png')",
+        login: "url('./data/login.jpg')",
       },
       borderWidth: {
         1: '1px',

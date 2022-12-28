@@ -7,6 +7,8 @@ import NotFound from './pages/NotFound'
 import MainLayout from './components/Layout/MainLayout'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Cart from './pages/Cart'
+import Auth from './components/Auth'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route path="courses" element={<Courses />} />
             <Route path="courses/:slug" element={<SingleCourse />} />
             <Route path="solutions/:slug" element={<Solutions />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="login" element={<Auth />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

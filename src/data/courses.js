@@ -1,5 +1,6 @@
 export const courses = [
   {
+    id: 0,
     title: 'Music Theory Full Course',
     slug: 'musictheory',
     price: 349.99,
@@ -10,6 +11,7 @@ export const courses = [
     desc4: 'Suscipit, error! Vitae repellendus odit non veritatis.',
   },
   {
+    id: 1,
     title: 'FL Studio Guru',
     slug: 'flstudio',
     price: 349.99,
@@ -20,6 +22,7 @@ export const courses = [
     desc4: 'Suscipit, error! Vitae repellendus odit non veritatis.',
   },
   {
+    id: 2,
     title: 'Logic Pro Course',
     slug: 'logic',
     price: 349.99,
@@ -30,6 +33,7 @@ export const courses = [
     desc4: 'Suscipit, error! Vitae repellendus odit non veritatis.',
   },
   {
+    id: 3,
     title: 'Reason Course',
     slug: 'reason',
     price: 349.99,
@@ -40,6 +44,7 @@ export const courses = [
     desc4: 'Suscipit, error! Vitae repellendus odit non veritatis.',
   },
   {
+    id: 4,
     title: 'Studio One Course',
     slug: 'studioone',
     price: 349.99,
@@ -50,6 +55,7 @@ export const courses = [
     desc4: 'Suscipit, error! Vitae repellendus odit non veritatis.',
   },
   {
+    id: 5,
     title: 'Reaper Courses',
     slug: 'reaper',
     price: 349.99,

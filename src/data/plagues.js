@@ -3,7 +3,7 @@ export const plagues = [
     slug: 'windows',
     items: [
       {
-        id: 0,
+        id: 6,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -13,7 +13,7 @@ export const plagues = [
         bestChoice: true,
       },
       {
-        id: 1,
+        id: 7,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -23,7 +23,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 2,
+        id: 8,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -33,7 +33,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 3,
+        id: 9,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -43,7 +43,7 @@ export const plagues = [
         bestChoice: true,
       },
       {
-        id: 4,
+        id: 10,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -53,7 +53,7 @@ export const plagues = [
         bestChoice: true,
       },
       {
-        id: 5,
+        id: 11,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -69,7 +69,7 @@ export const plagues = [
     slug: 'mac',
     items: [
       {
-        id: 0,
+        id: 13,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -79,7 +79,7 @@ export const plagues = [
         bestChoice: true,
       },
       {
-        id: 1,
+        id: 14,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -89,7 +89,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 2,
+        id: 15,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -99,7 +99,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 3,
+        id: 16,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -109,7 +109,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 4,
+        id: 17,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -119,7 +119,7 @@ export const plagues = [
         bestChoice: true,
       },
       {
-        id: 5,
+        id: 18,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -135,7 +135,7 @@ export const plagues = [
     slug: 'macm1',
     items: [
       {
-        id: 0,
+        id: 19,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -145,7 +145,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 1,
+        id: 20,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -155,7 +155,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 2,
+        id: 22,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -165,7 +165,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 3,
+        id: 23,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -175,7 +175,7 @@ export const plagues = [
         bestChoice: false,
       },
       {
-        id: 4,
+        id: 24,
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:

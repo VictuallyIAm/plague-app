@@ -1,8 +1,21 @@
 import React from 'react'
 import hit from '../data/hit.jpg'
 import best from '../data/best.jpg'
+import { useDispatch } from 'react-redux'
+import {
+  ADD_TO_CART,
+  CALCULATE_SUBTOTAL,
+  CALCULATE_TOTAL_QUANTITY,
+} from '../redux/features/cartSlice'
 
-const PlagCard = ({ title, price, desc, imgUrl, isHit, bestChoice }) => {
+const PlagCard = ({ title, price, desc, imgUrl, isHit, bestChoice, plag }) => {
+  const dispatch = useDispatch()
+  const addToCart = (item) => {
+    dispatch(ADD_TO_CART({ item }))
+    dispatch(CALCULATE_TOTAL_QUANTITY())
+    dispatch(CALCULATE_SUBTOTAL())
+  }
+
   return (
     <div className="p-3 mx-1 relative  my-4 shadow-md shadow-black flex flex-col items-center w-72">
       {isHit && (
@@ -26,7 +39,10 @@ const PlagCard = ({ title, price, desc, imgUrl, isHit, bestChoice }) => {
       <span className="text-xl">
         From<span className="text-2xl font-bold"> ${price}</span>
       </span>
-      <button className="text-white w-full text-md bg-biruz border-biruz border-1 rounded m-3 py-2 px-12 hover:bg-birux">
+      <button
+        onClick={() => addToCart(plag)}
+        className="text-white w-full text-md bg-biruz border-biruz border-1 rounded m-3 py-2 px-12 hover:bg-birux"
+      >
         Buy now
       </button>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiShoppingCart } from 'react-icons/fi'
 import { FaTelegramPlane, FaInstagram } from 'react-icons/fa'
 import Dropdown from '../drops/Dropdown'
@@ -6,11 +6,25 @@ import UserDrop from '../drops/UserDrop'
 import logo from '../../data/logo.png'
 import { list } from '../../data/list'
 import { Link } from 'react-router-dom'
+import {
+  CALCULATE_SUBTOTAL,
+  CALCULATE_TOTAL_QUANTITY,
+  selectCartTotalQuantity,
+} from '../../redux/features/cartSlice'
+import { useSelector, useDispatch } from 'react-redux'
 
 const Header = () => {
   const scrollToTop = () => {
     window.scrollToTop()
   }
+  const CartTotalQuantity = useSelector(selectCartTotalQuantity)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(CALCULATE_TOTAL_QUANTITY())
+    dispatch(CALCULATE_SUBTOTAL())
+  }, [dispatch])
+
   return (
     <div className="flex justify-between h-16 px-10 items-center text-sm bg-white border-b-1 shadow-md fixed z-30 w-screen font-semibold ">
       <div className="ml-3 pl-6">
@@ -38,15 +52,30 @@ const Header = () => {
         })}
       </div>
       <div className="flex mr-4 pr-6 items-center">
-        <FiShoppingCart
-          className="text-gray-400 mx-3 cursor-pointer"
-          size={20}
-        />
+        <Link to="/cart">
+          <div className="flex mx-3">
+            <FiShoppingCart
+              className="text-gray-400 cursor-pointer"
+              size={20}
+            />
+            <p
+              className={
+                CartTotalQuantity === 0
+                  ? 'invisible'
+                  : 'text-gray-400 -translate-y-1'
+              }
+            >
+              {CartTotalQuantity}
+            </p>
+          </div>
+        </Link>
         <UserDrop />
-        <FaTelegramPlane
-          size={23}
-          className="text-gray-400 mx-1 cursor-pointer"
-        />
+        <a href="https://t.me/dannythegoat" target="_blank" rel="noreferrer">
+          <FaTelegramPlane
+            size={23}
+            className="text-gray-400 mx-1 cursor-pointer"
+          />
+        </a>
         <a
           href="https://www.instagram.com/montaignebeats"
           target="_blank"

@@ -2,9 +2,21 @@ import React, { useEffect, useState } from 'react'
 import { BsCheckLg } from 'react-icons/bs'
 import { useParams } from 'react-router'
 import { courses } from '../data/courses'
+import { useDispatch } from 'react-redux'
+import {
+  ADD_TO_CART,
+  CALCULATE_SUBTOTAL,
+  CALCULATE_TOTAL_QUANTITY,
+} from '../redux/features/cartSlice'
 
 const SingleCourse = () => {
   const params = useParams()
+  const dispatch = useDispatch()
+  const addToCart = (item) => {
+    dispatch(ADD_TO_CART({ item }))
+    dispatch(CALCULATE_TOTAL_QUANTITY())
+    dispatch(CALCULATE_SUBTOTAL())
+  }
 
   const course = courses.find((course) => course.slug === params.slug)
 
@@ -37,7 +49,10 @@ const SingleCourse = () => {
             For ${course.price}
           </span>
           <div className="flex">
-            <button className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 py-4 px-12 hover:bg-birux">
+            <button
+              onClick={() => addToCart(course)}
+              className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 py-4 px-12 hover:bg-birux"
+            >
               Buy Now
             </button>
             <button className="text-textBlack text-2xl bg-white border-black border-2 rounded mx-3 py-4 px-12">
