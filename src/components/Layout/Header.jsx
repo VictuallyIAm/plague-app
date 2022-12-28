@@ -14,7 +14,9 @@ const Header = () => {
   return (
     <div className="flex justify-between h-16 px-10 items-center text-sm bg-white border-b-1 shadow-md fixed z-30 w-screen font-semibold ">
       <div className="ml-3 pl-6">
-        <img src={logo} className="h-12" alt="logo" />
+        <Link to="/">
+          <img src={logo} className="h-12" alt="logo" />
+        </Link>
       </div>
       <div className="flex">
         <div className="mx-3 cursor-pointer border-b-4 border-b-transparent hover:border-b-birux box-border">
@@ -45,7 +47,16 @@ const Header = () => {
           size={23}
           className="text-gray-400 mx-1 cursor-pointer"
         />
-        <FaInstagram size={23} className="text-gray-400 mx-1 cursor-pointer" />
+        <a
+          href="https://www.instagram.com/montaignebeats"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaInstagram
+            size={23}
+            className="text-gray-400 mx-1 cursor-pointer"
+          />
+        </a>
       </div>
     </div>
   )

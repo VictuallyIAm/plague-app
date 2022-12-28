@@ -1,6 +1,7 @@
 import Plags from './pages/Plagues'
 import Home from './pages/Home'
 import Courses from './pages/Courses'
+import SingleCourse from './pages/SingleCourse'
 import Solutions from './pages/Solutions'
 import NotFound from './pages/NotFound'
 import MainLayout from './components/Layout/MainLayout'
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="plug/:slug" element={<Plags />} />
-            <Route path="courses/:slug" element={<Courses />} />
+            <Route path="courses" element={<Courses />} />
+            <Route path="courses/:slug" element={<SingleCourse />} />
             <Route path="solutions/:slug" element={<Solutions />} />
             <Route path="*" element={<NotFound />} />
           </Route>

@@ -24,7 +24,7 @@ const PlagCard = ({ title, price, desc, imgUrl, isHit, bestChoice }) => {
         40% OFF
       </span>
       <span className="text-xl">
-        For<span className="text-2xl font-bold"> ${price}</span>/year
+        From<span className="text-2xl font-bold"> ${price}</span>
       </span>
       <button className="text-white w-full text-md bg-biruz border-biruz border-1 rounded m-3 py-2 px-12 hover:bg-birux">
         Buy now

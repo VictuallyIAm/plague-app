@@ -12,7 +12,6 @@ const Plags = () => {
     setActiveLink(params.slug)
   }, [params])
 
-  console.log(activeLink)
   const navigate = useNavigate()
   const plags = plagues.find((plag) => plag.slug === params.slug)
 

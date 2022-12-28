@@ -4,8 +4,12 @@ import Card from '../components/Card'
 import merch from '../data/merch.jpg'
 import merch2 from '../data/merch2.png'
 import { Slider } from '../components/slider/Slider'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
+  const scrollToTop = () => {
+    window.scrollToTop()
+  }
   return (
     <>
       <div className=" h-screen bg-gradient-to-br from-emerald-100 pt-24 px-16">
@@ -19,12 +23,16 @@ const Home = () => {
             non veritatis.
           </p>
           <div className="flex">
-            <button className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 py-4 px-12 hover:bg-birux">
-              Get Plag
-            </button>
-            <button className="text-textBlack text-2xl bg-white border-2 border-black mx-3 rounded py-4 px-9">
-              Get Course
-            </button>
+            <Link to="plug/windows" onClick={scrollToTop}>
+              <button className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 py-4 px-12 hover:bg-birux">
+                Get Plag
+              </button>
+            </Link>
+            <Link to="courses" onClick={scrollToTop}>
+              <button className="text-textBlack text-2xl bg-white border-2 border-black mx-3 rounded py-4 px-9">
+                Choose Course
+              </button>
+            </Link>
           </div>
         </div>
         <div>

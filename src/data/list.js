@@ -25,7 +25,7 @@ export const list = [
     slug: 'solutions',
     positions: [
       { id: 0, title: 'Full studio', slug: 'fullstudio' },
-      { id: 1, title: 'Become a beatmaker', slug: 'becomebeatmaker' },
+      { id: 1, title: 'Become a producer', slug: 'becomeproducer' },
       { id: 2, title: 'Production consulting', slug: 'consulting' },
     ],
   },
