@@ -17,7 +17,9 @@ const Dropdown = ({ title, positions, slug }) => {
       setIsExpanded(false)
     }
   }
-
+  const scrollToTop = () => {
+    window.scrollToTop()
+  }
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
       <div
@@ -47,6 +49,10 @@ const Dropdown = ({ title, positions, slug }) => {
                   to={`${slug}/${item.slug}`}
                   className="card"
                   key={item.id}
+                  onClick={() => {
+                    setIsExpanded(false)
+                    scrollToTop()
+                  }}
                 >
                   <div
                     key={positions.indexOf(item)}

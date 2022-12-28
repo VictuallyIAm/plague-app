@@ -24,6 +24,7 @@ module.exports = {
         bgFooter: '#fcfcfc',
         bgSlide: '#f8fbfb',
         textSlide: '#444444',
+        bgPurple: '#5e2d64',
       },
       backgroundImage: {
         map: "url('./data/map.png')",

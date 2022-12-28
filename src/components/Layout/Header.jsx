@@ -8,6 +8,9 @@ import { list } from '../../data/list'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+  const scrollToTop = () => {
+    window.scrollToTop()
+  }
   return (
     <div className="flex justify-between h-16 px-10 items-center text-sm bg-white border-b-1 shadow-md fixed z-30 w-screen font-semibold ">
       <div className="ml-3 pl-6">
@@ -15,7 +18,7 @@ const Header = () => {
       </div>
       <div className="flex">
         <div className="mx-3 cursor-pointer border-b-4 border-b-transparent hover:border-b-birux box-border">
-          <Link to="/">
+          <Link to="/" onClick={scrollToTop}>
             <div className="flex items-center px-2 py-5 text-textBlack ">
               Home
             </div>

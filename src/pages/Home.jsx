@@ -20,7 +20,7 @@ const Home = () => {
           </p>
           <div className="flex">
             <button className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 py-4 px-12 hover:bg-birux">
-              Get App
+              Get Plag
             </button>
             <button className="text-textBlack text-2xl bg-white border-2 border-black mx-3 rounded py-4 px-9">
               Get Course

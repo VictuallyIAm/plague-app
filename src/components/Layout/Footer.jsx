@@ -12,6 +12,9 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   const date = new Date()
   const year = date.getFullYear()
+  const scrollToTop = () => {
+    window.scrollToTop()
+  }
 
   return (
     <>
@@ -32,6 +35,7 @@ const Footer = () => {
                     to={`${mainslug}/${item.slug}`}
                     className="my-1"
                     key={item.id}
+                    onClick={scrollToTop}
                   >
                     <span className=" cursor-pointer hover:underline">
                       {item.title}
