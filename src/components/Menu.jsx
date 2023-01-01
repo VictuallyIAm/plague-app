@@ -157,6 +157,15 @@ const Menu = ({ setMenuExpanded }) => {
               >
                 <div className="py-4 px-3 text-black">Full solutions</div>
               </Link>
+              <Link
+                to="/plague-app/cart"
+                onClick={() => {
+                  setMenuExpanded(false)
+                  scrollToTop()
+                }}
+              >
+                <div className="py-4 px-3 text-black">Cart</div>
+              </Link>
               <AdminOnlyLink>
                 <Link
                   to="/plague-app/admin"

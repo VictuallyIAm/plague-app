@@ -89,7 +89,7 @@ const Cart = () => {
     <>
       {cartItems.length === 0 ? (
         <div className="pt-24 bg-slate-50 pb-12">
-          <div className=" mx-24 mb-12  shadow-md shadow-gray-400 bg-white">
+          <div className=" mx-24 mb-12 md:mx-3 shadow-md shadow-gray-400 bg-white">
             <h1 className="m-12 p-4 border-b-2 border-b-gray-400 text-2xl font-semibold">
               Your cart is empty. Do you want to continue shopping?
             </h1>
@@ -102,7 +102,7 @@ const Cart = () => {
         </div>
       ) : (
         <div className="py-24 bg-gradient-to-b from-gray-200 ">
-          <div className="border-1 mx-20 border-gray-500 shadow-md shadow-gray-500">
+          <div className="border-1 mx-20 md:mx-3 border-gray-500 shadow-md shadow-gray-500">
             <div className="flex p-6 text-xl font-thin text-birux justify-between items-center bg-white">
               <span className="w-1/2 text-left">Product</span>
               <span>Delivery method</span>
@@ -116,10 +116,16 @@ const Cart = () => {
                   className="flex p-6  justify-between items-center bg-white border-t-1 border-t-gray-100"
                 >
                   <div className="flex w-1/2">
-                    <img src={imgUrl} alt="logo" className="w-20"></img>
+                    <img
+                      src={imgUrl}
+                      alt="logo"
+                      className="w-20 md:hidden"
+                    ></img>
                     <div className="flex flex-col items-start mx-4">
-                      <span className="text-gray-700 text-2xl">{title}</span>
-                      <span className="text-gray-700 my-2 text-sm">
+                      <span className="text-gray-700 text-2xl md:text-base">
+                        {title}
+                      </span>
+                      <span className="text-gray-700 my-2 text-sm md:text-xs">
                         by DJQdan
                       </span>
                       <span className="text-gray-700 text-xs">
@@ -127,7 +133,7 @@ const Cart = () => {
                       </span>
                     </div>
                   </div>
-                  <span className="align-middle">Digital</span>
+                  <span className="align-middle md:hidden">Digital</span>
                   <div className="flex items-center w-1/6 justify-end">
                     <span className="text-xl font-bold mx-4">${price}</span>
                     <MdClose
@@ -141,9 +147,9 @@ const Cart = () => {
               )
             })}
             <div className="flex p-6 text-3xl font-semibold text-gray-700 justify-between items-center bg-white">
-              <span className="w-1/2 text-left"></span>
+              <span className="w-1/2 text-left md:hidden"></span>
               <span></span>
-              <span className="w-2/6 text-right pr-4 flex justify-end">
+              <span className="w-2/6 text-right pr-4 flex justify-end md:w-full">
                 Total &nbsp;&nbsp;&nbsp;{' '}
                 <p className="text-red-500">${cartTotalAmount.toFixed(2)}</p>
               </span>
