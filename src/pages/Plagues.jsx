@@ -43,7 +43,7 @@ const Plags = () => {
             className="pt-20 mx-12 py-2 md:flex md:justify-start md:mx-2"
           >
             <Link
-              to="/plug/windows"
+              to="/plague-app/plug/windows"
               className={
                 activeLink === 'windows'
                   ? 'text-biruz font-semibold px-3 py-2 border-b-4 border-b-birux'
@@ -53,7 +53,7 @@ const Plags = () => {
               Windows
             </Link>
             <Link
-              to="/plug/mac"
+              to="/plague-app/plug/mac"
               className={
                 activeLink === 'mac'
                   ? 'text-biruz font-semibold px-3 py-2 border-b-4 border-b-birux'
@@ -63,7 +63,7 @@ const Plags = () => {
               MacOS (Intel CPU)
             </Link>
             <Link
-              to="/plug/macm1"
+              to="/plague-app/plug/macm1"
               className={
                 activeLink === 'macm1'
                   ? 'text-biruz font-semibold px-3 py-2 border-b-4 border-b-birux'

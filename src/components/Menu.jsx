@@ -84,7 +84,7 @@ const Menu = ({ setMenuExpanded }) => {
               <div
                 onClick={() => {
                   userLogout()
-                  navigate('//plague-app')
+                  navigate('/plague-app')
                   setMenuExpanded(false)
                 }}
                 className="py-4 px-3 text-black"
@@ -131,7 +131,7 @@ const Menu = ({ setMenuExpanded }) => {
                 <div className="py-4 px-3 text-black">Home</div>
               </Link>
               <Link
-                to="//plague-app/courses"
+                to="/plague-app/courses"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()

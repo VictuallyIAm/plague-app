@@ -55,7 +55,7 @@ const Solutions = () => {
           </div>
           <div ref={choice} className="pt-20 mx-12 py-2 md:mx-2 md:flex">
             <Link
-              to="/solutions/fullstudio"
+              to="/plague-app/solutions/fullstudio"
               className={
                 activeLink === 'fullstudio'
                   ? 'text-biruz font-semibold px-3 py-2 border-b-4 border-b-birux md:px-1 md:text-sm md:pb-0'
@@ -65,7 +65,7 @@ const Solutions = () => {
               Full Studio
             </Link>
             <Link
-              to="/solutions/becomeproducer"
+              to="/plague-app/solutions/becomeproducer"
               className={
                 activeLink === 'becomeproducer'
                   ? 'text-biruz font-semibold px-3 py-2 border-b-4 border-b-birux md:px-1 md:text-sm md:pb-0'
@@ -75,7 +75,7 @@ const Solutions = () => {
               Become a producer
             </Link>
             <Link
-              to="/solutions/consulting"
+              to="/plague-app/solutions/consulting"
               className={
                 activeLink === 'consulting'
                   ? 'text-biruz font-semibold px-3 py-2 border-b-4 border-b-birux md:px-1 md:text-sm md:pb-0'
