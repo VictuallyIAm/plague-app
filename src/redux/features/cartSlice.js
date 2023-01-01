@@ -19,7 +19,11 @@ const cartSlice = createSlice({
       if (productIndex >= 0) {
         console.log('error')
       } else {
-        const tempProduct = { ...action.payload, cartQuantity: 1 }
+        const tempProduct = {
+          ...action.payload,
+          cartQuantity: 1,
+          status: 'Created',
+        }
         state.cartItems.push(tempProduct)
       }
       localStorage.setItem('cartItems', JSON.stringify(state.cartItems))

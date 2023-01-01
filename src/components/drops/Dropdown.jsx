@@ -18,7 +18,7 @@ const Dropdown = ({ title, positions, slug }) => {
     }
   }
   const scrollToTop = () => {
-    window.scrollToTop()
+    window.scrollTo({ top: 0 })
   }
   return (
     <ClickAwayListener onClickAway={handleClickAway}>

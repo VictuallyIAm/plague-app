@@ -6,17 +6,17 @@ import {
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
-  signOut,
+  updateProfile,
 } from 'firebase/auth'
 import { auth } from '../firebase.config'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { FaGoogle } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
 import {
   REMOVE_ACTIVE_USER,
   SET_ACTIVE_USER,
 } from '../redux/features/authSlice'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 const Auth = () => {
   const [stage, setStage] = useState('login')
@@ -31,6 +31,7 @@ const Auth = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user
+        navigate(-1)
       })
       .catch((error) => {})
   }
@@ -40,6 +41,7 @@ const Auth = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user
+        navigate(-1)
       })
       .catch((error) => {})
   }
@@ -48,9 +50,15 @@ const Auth = () => {
     e.preventDefault()
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const user = userCredential.user.then(() => {}).catch((error) => {})
+        const user = userCredential.user
+          .then(() => {})
+          .catch((error) => {})
+          .then(() => {})
+          .catch((error) => {})
       })
-      .then(() => {})
+      .then(() => {
+        navigate(-1)
+      })
       .catch((error) => {})
 
       .catch((error) => {})
@@ -59,7 +67,9 @@ const Auth = () => {
   const resetPassword = (e) => {
     e.preventDefault()
     sendPasswordResetEmail(auth, email)
-      .then(() => {})
+      .then(() => {
+        navigate(-1)
+      })
       .catch((error) => {})
   }
 
@@ -73,18 +83,11 @@ const Auth = () => {
           })
         )
         console.log(user)
-        navigate('/')
       } else {
         dispatch(REMOVE_ACTIVE_USER())
       }
     })
   }, [dispatch])
-
-  const userLogout = () => {
-    signOut(auth)
-      .then(() => {})
-      .catch((error) => {})
-  }
 
   return (
     <div className="bg-login bg-cover">
@@ -131,7 +134,7 @@ const Auth = () => {
                 <div className="flex justify-between">
                   <label className="text-sm text-gray-400">Password:</label>
                   <div className="text-sm text-biruz hover:text-birux  font-bold">
-                    <Link onClick={() => setIsReset(true)}>Reset Password</Link>
+                    <span onClick={() => setIsReset(true)}>Reset Password</span>
                   </div>
                 </div>
                 <input
@@ -167,6 +170,7 @@ const Auth = () => {
                 <input
                   type="text"
                   required
+                  placeholder="djqdan@mail.ru"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="border-1 border-gray-300 hover:border-birux outline-1 outline-biruz rounded mb-6 text-xs p-2"

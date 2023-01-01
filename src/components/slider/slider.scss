@@ -51,6 +51,12 @@
 @media screen and (max-width: 600px) {
   .content {
     width: 80%;
+    h2 {
+      font-size: large;
+    }
+    p {
+      font-size: small;
+    }
   }
 }
 
@@ -79,6 +85,12 @@
   top: 40%;
   transform: translateY(-20%);
   z-index: 2;
+}
+@media screen and (max-width: 600px) {
+  .arrow {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .arrow:hover {

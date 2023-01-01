@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 import { plagues } from '../data/plagues'
 import PlagCard from '../components/PlagCard'
-import homeImg from '../data/homeImg.png'
+import plagimg from '../data/plagimg.png'
 
 const Plags = () => {
   const params = useParams()
@@ -22,9 +22,9 @@ const Plags = () => {
 
   return (
     <>
-      <div className="h-screen bg-gradient-to-b from-bgPurple pt-36 flex mb-12 px-16">
-        <div className="w-1/2 flex flex-col items-start">
-          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600">
+      <div className="h-screen bg-gradient-to-b from-bgPlag pt-36 flex mb-12 px-16 ">
+        <div className="w-1/2 flex flex-col items-start md:pb-8 md:w-full">
+          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600 md:text-xl md:pb-4">
             Everything for comfortable start and insured way
           </h1>
           <p className="text-left text-xl text-black py-12">
@@ -33,12 +33,15 @@ const Plags = () => {
           <div className="flex justify-start">
             <button
               onClick={scrollToChoice}
-              className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 mb-10 py-4 px-12 hover:bg-birux"
+              className="text-white text-2xl bg-biruz md:text-sm md:py-1 md:px-4 border-biruz border-2 rounded mx-3 mb-10 py-4 px-12 hover:bg-birux"
             >
               Get Started
             </button>
           </div>
-          <div ref={choice} className="pt-20 mx-12 py-2">
+          <div
+            ref={choice}
+            className="pt-20 mx-12 py-2 md:flex md:justify-start md:mx-2"
+          >
             <Link
               to="/plug/windows"
               className={
@@ -71,16 +74,16 @@ const Plags = () => {
             </Link>
           </div>
         </div>
-        <div>
+        <div className="md:hidden">
           <img
-            src={homeImg}
+            src={plagimg}
             alt="plagimg"
-            className="h-192 absolute right-0 top-12 z-10"
+            className="h-150 absolute right-0 top-16 z-10"
           />
         </div>
       </div>
 
-      <div className="flex flex-wrap mx-8 my-4">
+      <div className="flex flex-wrap mx-8 my-4 md:justify-center">
         {plags.items.map((plag) => {
           return (
             <PlagCard

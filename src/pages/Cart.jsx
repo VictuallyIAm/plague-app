@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { FaTrashAlt } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
 import {
   CALCULATE_SUBTOTAL,
@@ -10,14 +9,22 @@ import {
   REMOVE_FROM_CARD,
   selectCartItems,
   selectCartTotalAmount,
-  selectCartTotalQuantity,
 } from '../redux/features/cartSlice'
+import { db } from '../firebase.config'
+import { addDoc, collection, Timestamp } from 'firebase/firestore'
+import { selectEmail, selectIsLoggedIn } from '../redux/features/authSlice'
 
 const Cart = () => {
   const cartItems = useSelector(selectCartItems)
   const cartTotalAmount = useSelector(selectCartTotalAmount)
-  const cartTotalQuantity = useSelector(selectCartTotalQuantity)
+  const userEmail = useSelector(selectEmail)
+  const isLoggedIn = useSelector(selectIsLoggedIn)
   const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0 })
+  }
 
   const removeFromCart = (cart) => {
     dispatch(REMOVE_FROM_CARD(cart))
@@ -31,6 +38,52 @@ const Cart = () => {
     dispatch(CALCULATE_SUBTOTAL())
     dispatch(CALCULATE_TOTAL_QUANTITY())
   }, [dispatch, cartItems])
+
+  const goToLog = (e) => {
+    e.preventDefault(navigate('/login'))
+    scrollToTop()
+  }
+  const addOrder = (e) => {
+    e.preventDefault()
+    cartItems.forEach((position) => {
+      try {
+        const docRef = addDoc(collection(db, `orders`), {
+          userEmail: userEmail,
+          total: position.item.price,
+          status: 'Created',
+          title: position.item.title,
+          imgUrl: position.item.imgUrl,
+          type: position.item.type,
+          createdAt: Timestamp.now().toDate(),
+        })
+      } catch (error) {}
+    })
+    const data = {
+      service_id: 'service_321usp4',
+      template_id: 'template_w7qrq2b',
+      user_id: 'Qy5EvY0m13ER3oFiB',
+    }
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Success:', data)
+      })
+      .catch((error) => {
+        console.log('Error:', error.message)
+      })
+
+    clearCart()
+    dispatch(CALCULATE_TOTAL_QUANTITY())
+    navigate('/')
+    scrollToTop()
+  }
 
   return (
     <>
@@ -101,7 +154,10 @@ const Cart = () => {
               Create an order and I will connect with you in 24 hours to manage
               details
             </span>
-            <button className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-20 my-3 px-8 py-2  hover:bg-birux">
+            <button
+              onClick={isLoggedIn ? addOrder : goToLog}
+              className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-20 my-3 px-8 py-2  hover:bg-birux"
+            >
               Create an order now
             </button>
           </div>

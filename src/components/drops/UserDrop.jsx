@@ -34,7 +34,6 @@ const UserDrop = () => {
             userID: user.uid,
           })
         )
-        console.log(user)
       } else {
         dispatch(REMOVE_ACTIVE_USER())
       }
@@ -70,7 +69,7 @@ const UserDrop = () => {
             return (
               <Link
                 key={userList.indexOf(item)}
-                to={IsLoggedIn ? '#' : '/login'}
+                to={IsLoggedIn ? `/${item.slug}` : '/login'}
               >
                 <div className=" px-2 text-left text-white w-48 py-3 bg-birux hover:bg-biruz text-sm font-sans cursor-pointer">
                   {item.title}

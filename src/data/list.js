@@ -3,11 +3,10 @@ export const list = [
     title: 'Courses',
     slug: 'courses',
     positions: [
-      { id: 25, title: 'Music theory', slug: 'musictheory' },
+      { id: 25, title: 'Музыкальная теория', slug: 'musictheory' },
       { id: 26, title: 'FL studio', slug: 'flstudio' },
       { id: 27, title: 'Reaper', slug: 'reaper' },
       { id: 28, title: 'Logic', slug: 'logic' },
-      { id: 29, title: 'Reason', slug: 'reason' },
       { id: 30, title: 'StudioOne', slug: 'studioone' },
       { id: 666, title: 'Help me to choose', slug: '' },
     ],
@@ -16,9 +15,9 @@ export const list = [
     title: 'Plagueins',
     slug: 'plug',
     positions: [
-      { id: 31, title: 'For Windows', slug: 'windows' },
-      { id: 32, title: 'For Mac Intel', slug: 'mac' },
-      { id: 33, title: 'For M1 Mac', slug: 'macm1' },
+      { id: 31, title: 'Для Windows', slug: 'windows' },
+      { id: 32, title: 'Для Mac Intel', slug: 'mac' },
+      { id: 33, title: 'Для M1 Mac', slug: 'macm1' },
     ],
   },
   {

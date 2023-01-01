@@ -9,6 +9,11 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Cart from './pages/Cart'
 import Auth from './components/Auth'
+import MyPlags from './pages/MyPlags'
+import MyCourses from './pages/MyCourses'
+import Support from './pages/Support'
+import AdminOnlyRoute from './components/admin/AdminRoute'
+import Orders from './components/admin/Orders'
 
 function App() {
   return (
@@ -23,7 +28,18 @@ function App() {
             <Route path="solutions/:slug" element={<Solutions />} />
             <Route path="cart" element={<Cart />} />
             <Route path="login" element={<Auth />} />
+            <Route path="myplags" element={<MyPlags />} />
+            <Route path="mycourses" element={<MyCourses />} />
+            <Route path="support" element={<Support />} />
             <Route path="*" element={<NotFound />} />
+            <Route
+              path="admin"
+              element={
+                <AdminOnlyRoute>
+                  <Orders />
+                </AdminOnlyRoute>
+              }
+            />
           </Route>
         </Routes>
       </div>

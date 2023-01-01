@@ -13,7 +13,7 @@ const Footer = () => {
   const date = new Date()
   const year = date.getFullYear()
   const scrollToTop = () => {
-    window.scrollToTop()
+    window.scrollTo({ top: 0 })
   }
 
   return (
@@ -56,7 +56,7 @@ const Footer = () => {
             iure nostrum adipisci cupiditate.
           </p>
         </div>
-        <div className="flex justify-evenly items-center w-1/4 text-biruz">
+        <div className="flex justify-evenly items-center w-1/4 text-biruz md:flex-col">
           <a
             href="https://www.instagram.com/montaignebeats"
             target="_blank"

@@ -13,6 +13,7 @@ module.exports = {
       spacing: {
         39: '9.9rem',
         192: '34rem',
+        150: '29rem',
       },
       colors: {
         f8: '#f8f8f8',
@@ -25,8 +26,9 @@ module.exports = {
         bgFooter: '#fcfcfc',
         bgSlide: '#f8fbfb',
         textSlide: '#444444',
-        bgPurple: '#5e2d64',
-        bgYellow: '#f8fcee',
+        bgPurple: '#b09d64',
+        bgPlag: '#bcbcb6',
+        bgYellow: '#3f1b00',
         bgBiruz: '#65bab3',
         bgFeatOne: '#fbf9fd',
         bgFeatOTwo: '#f5fbfe',

@@ -4,26 +4,31 @@ export const plagues = [
     items: [
       {
         id: 6,
-        title: 'Omnisphere 2.8 Full',
-        desc: 'some description  description some description some description',
+        type: 'plag',
+        title: 'Omnisphere 2.8 Full Bundle',
+        desc: 'Последняя версия со всеми обновлениями,включая Trillian, Keyscape, Bob Moog, Sonic Extensions.',
         imgUrl:
           'https://i.ibb.co/W5JZ1Gn/OMNI2-144c32ff8af719f9fc9450602f753310.jpg',
         price: 19.99,
         isHit: false,
         bestChoice: true,
+        status: null,
       },
       {
         id: 7,
-        title: 'Omnisphere 2.8 Full',
+        type: 'plag',
+        title: 'Waves Complete',
         desc: 'some description  description some description some description',
         imgUrl:
           'https://i.ibb.co/W5JZ1Gn/OMNI2-144c32ff8af719f9fc9450602f753310.jpg',
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
       {
         id: 8,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -31,9 +36,11 @@ export const plagues = [
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
       {
         id: 9,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -41,9 +48,11 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: true,
+        status: null,
       },
       {
         id: 10,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -51,9 +60,11 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: true,
+        status: null,
       },
       {
         id: 11,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -61,6 +72,7 @@ export const plagues = [
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
     ],
   },
@@ -70,6 +82,7 @@ export const plagues = [
     items: [
       {
         id: 13,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -77,9 +90,11 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: true,
+        status: null,
       },
       {
         id: 14,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -87,9 +102,11 @@ export const plagues = [
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
       {
         id: 15,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -97,9 +114,11 @@ export const plagues = [
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
       {
         id: 16,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -107,9 +126,11 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: false,
+        status: null,
       },
       {
         id: 17,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -117,9 +138,11 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: true,
+        status: null,
       },
       {
         id: 18,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -127,6 +150,7 @@ export const plagues = [
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
     ],
   },
@@ -136,6 +160,7 @@ export const plagues = [
     items: [
       {
         id: 19,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -143,9 +168,11 @@ export const plagues = [
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
       {
         id: 20,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -153,9 +180,11 @@ export const plagues = [
         price: 19.99,
         isHit: true,
         bestChoice: false,
+        status: null,
       },
       {
         id: 22,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -163,9 +192,11 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: false,
+        status: null,
       },
       {
         id: 23,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -173,9 +204,11 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: false,
+        status: null,
       },
       {
         id: 24,
+        type: 'plag',
         title: 'Omnisphere 2.8 Full',
         desc: 'some description  description some description some description',
         imgUrl:
@@ -183,6 +216,7 @@ export const plagues = [
         price: 19.99,
         isHit: false,
         bestChoice: true,
+        status: 'null',
       },
     ],
   },

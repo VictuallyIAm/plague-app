@@ -1,5 +1,6 @@
 export const solutions = [
   {
+    title: 'Full Studio',
     slug: 'fullstudio',
     priceBasic: 12.99,
     pricePro: 36.99,
@@ -54,6 +55,7 @@ export const solutions = [
     ],
   },
   {
+    title: 'Become a producer',
     slug: 'becomeproducer',
     priceBasic: 12.99,
     pricePro: 36.99,
@@ -102,6 +104,7 @@ export const solutions = [
     ],
   },
   {
+    title: 'Production consulting',
     slug: 'consulting',
     priceBasic: 12.99,
     pricePro: 36.99,
