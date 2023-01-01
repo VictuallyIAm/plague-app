@@ -69,7 +69,9 @@ const UserDrop = () => {
             return (
               <Link
                 key={userList.indexOf(item)}
-                to={IsLoggedIn ? `/${item.slug}` : '/login'}
+                to={
+                  IsLoggedIn ? `/plague-app/${item.slug}` : '/plague-app/login'
+                }
               >
                 <div className=" px-2 text-left text-white w-48 py-3 bg-birux hover:bg-biruz text-sm font-sans cursor-pointer">
                   {item.title}

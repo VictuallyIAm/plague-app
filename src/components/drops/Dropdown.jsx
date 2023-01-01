@@ -46,7 +46,7 @@ const Dropdown = ({ title, positions, slug }) => {
             positions.map((item) => {
               return (
                 <Link
-                  to={`${slug}/${item.slug}`}
+                  to={`/plague-app/${slug}/${item.slug}`}
                   className="card"
                   key={item.id}
                   onClick={() => {

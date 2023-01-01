@@ -55,7 +55,7 @@ const Menu = ({ setMenuExpanded }) => {
                 </div>
               </div>
               <Link
-                to="/mycourses"
+                to="/plague-app/mycourses"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()
@@ -64,7 +64,7 @@ const Menu = ({ setMenuExpanded }) => {
                 <div className="py-4 px-3 text-black">My courses</div>
               </Link>
               <Link
-                to="/myplags"
+                to="/plague-app/myplags"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()
@@ -73,7 +73,7 @@ const Menu = ({ setMenuExpanded }) => {
                 <div className="py-4 px-3 text-black">My plags</div>
               </Link>
               <Link
-                to="/support"
+                to="/plague-app/support"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()
@@ -84,7 +84,7 @@ const Menu = ({ setMenuExpanded }) => {
               <div
                 onClick={() => {
                   userLogout()
-                  navigate('/')
+                  navigate('//plague-app')
                   setMenuExpanded(false)
                 }}
                 className="py-4 px-3 text-black"
@@ -122,7 +122,7 @@ const Menu = ({ setMenuExpanded }) => {
           <ClickAwayListener onClickAway={() => setMenuExpanded(false)}>
             <div className="w-2/3 bg-white text-left  text-xl h-screen ">
               <Link
-                to="/"
+                to="/plague-app"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()
@@ -131,7 +131,7 @@ const Menu = ({ setMenuExpanded }) => {
                 <div className="py-4 px-3 text-black">Home</div>
               </Link>
               <Link
-                to="/courses"
+                to="//plague-app/courses"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()
@@ -140,7 +140,7 @@ const Menu = ({ setMenuExpanded }) => {
                 <div className="py-4 px-3 text-black">Courses</div>
               </Link>
               <Link
-                to="/plug/windows"
+                to="/plague-app/plug/windows"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()
@@ -149,7 +149,7 @@ const Menu = ({ setMenuExpanded }) => {
                 <div className="py-4 px-3 text-black">Plaguins</div>
               </Link>
               <Link
-                to="/solutions/fullstudio"
+                to="/plague-app/solutions/fullstudio"
                 onClick={() => {
                   setMenuExpanded(false)
                   scrollToTop()
@@ -159,7 +159,7 @@ const Menu = ({ setMenuExpanded }) => {
               </Link>
               <AdminOnlyLink>
                 <Link
-                  to="/admin"
+                  to="/plague-app/admin"
                   onClick={() => {
                     setMenuExpanded(false)
                     scrollToTop()
@@ -173,7 +173,7 @@ const Menu = ({ setMenuExpanded }) => {
                   if (IsLoggedIn) {
                     setShowAcc(true)
                   } else {
-                    navigate('/login')
+                    navigate('/plague-app/login')
                     setMenuExpanded(false)
                     scrollToTop()
                   }

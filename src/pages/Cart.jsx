@@ -81,7 +81,7 @@ const Cart = () => {
 
     clearCart()
     dispatch(CALCULATE_TOTAL_QUANTITY())
-    navigate('/')
+    navigate('/plague-app')
     scrollToTop()
   }
 
@@ -93,7 +93,7 @@ const Cart = () => {
             <h1 className="m-12 p-4 border-b-2 border-b-gray-400 text-2xl font-semibold">
               Your cart is empty. Do you want to continue shopping?
             </h1>
-            <Link to="/">
+            <Link to="/plague-app">
               <button className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 my-3 py-4 px-12 hover:bg-birux">
                 Go to home
               </button>

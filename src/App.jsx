@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<MainLayout />}>
+          <Route path="/plague-app" element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="plug/:slug" element={<Plags />} />
             <Route path="courses" element={<Courses />} />

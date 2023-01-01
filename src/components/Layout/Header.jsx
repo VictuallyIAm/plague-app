@@ -39,7 +39,7 @@ const Header = () => {
           className="cursor-pointer"
         />
         <div className="ml-8">
-          <Link to="/">
+          <Link to="/plague-app/">
             <img src={logo} className="h-8" alt="logo" />
           </Link>
         </div>
@@ -47,13 +47,13 @@ const Header = () => {
       {menuExpanded && <Menu setMenuExpanded={setMenuExpanded} />}
       <div className="flex justify-between h-16 px-10 items-center text-sm bg-white border-b-1 shadow-md fixed z-30 w-screen font-semibold md:hidden">
         <div className="ml-3 pl-6">
-          <Link to="/">
+          <Link to="/plague-app/">
             <img src={logo} className="h-12" alt="logo" />
           </Link>
         </div>
         <div className="flex">
           <div className="mx-3 cursor-pointer border-b-4 border-b-transparent hover:border-b-birux box-border">
-            <Link to="/" onClick={scrollToTop}>
+            <Link to="/plague-app/" onClick={scrollToTop}>
               <div className="flex items-center px-2 py-5 text-textBlack ">
                 Home
               </div>
@@ -71,7 +71,7 @@ const Header = () => {
           })}
           <AdminOnlyLink>
             <div className="mx-3 cursor-pointer border-b-4 border-b-transparent hover:border-b-birux box-border">
-              <Link to="/admin" onClick={scrollToTop}>
+              <Link to="/plague-app/admin" onClick={scrollToTop}>
                 <div className="flex items-center px-2 py-5 text-textBlack ">
                   All orders
                 </div>
@@ -80,7 +80,7 @@ const Header = () => {
           </AdminOnlyLink>
         </div>
         <div className="flex mr-4 pr-6 items-center">
-          <Link to="/cart">
+          <Link to="/plague-app/cart">
             <div className="flex mx-3">
               <FiShoppingCart
                 className="text-gray-400 cursor-pointer"
