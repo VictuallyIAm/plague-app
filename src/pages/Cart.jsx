@@ -94,7 +94,7 @@ const Cart = () => {
               Your cart is empty. Do you want to continue shopping?
             </h1>
             <Link to="/plague-app">
-              <button className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-3 my-3 py-4 px-12 hover:bg-birux">
+              <button className="text-white md:text-xl text-2xl bg-biruz border-biruz border-2 rounded mx-3 my-3 py-4 px-12 hover:bg-birux">
                 Go to home
               </button>
             </Link>

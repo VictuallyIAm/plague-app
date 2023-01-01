@@ -53,7 +53,7 @@ const Solutions = () => {
               Choose your option
             </button>
           </div>
-          <div ref={choice} className="pt-20 mx-12 py-2 md:mx-2 md:flex">
+          <div ref={choice} className="pt-20 mx-8 py-2 md:mx-2 md:flex">
             <Link
               to="/plague-app/solutions/fullstudio"
               className={

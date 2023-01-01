@@ -27,7 +27,7 @@ const Orders = () => {
     <>
       {filteredOrders.length === 0 ? (
         <div className="pt-24 bg-slate-50 pb-12">
-          <div className=" mx-24 mb-12  shadow-md shadow-gray-400 bg-white">
+          <div className=" mx-24 mb-12 md:mx-3  shadow-md shadow-gray-400 bg-white">
             <h1 className="m-12 p-4 border-b-2 border-b-gray-400 text-2xl font-semibold">
               No orders yet
             </h1>
