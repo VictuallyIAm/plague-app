@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/plague-app/static/css/main.5441d4cd.css",
-    "main.js": "/plague-app/static/js/main.34c7fc85.js",
+    "main.js": "/plague-app/static/js/main.ef728ea6.js",
     "static/media/homeImg.png": "/plague-app/static/media/homeImg.b8842cff658eee7a8876.png",
     "static/media/course.png": "/plague-app/static/media/course.3211036b6a467f5d231a.png",
     "static/media/studio.png": "/plague-app/static/media/studio.e9c0ea95a0ff0c026dcd.png",
@@ -17,10 +17,10 @@
     "static/media/aware.svg": "/plague-app/static/media/aware.bfcb8b9d603990de77b93687f73a687f.svg",
     "index.html": "/plague-app/index.html",
     "main.5441d4cd.css.map": "/plague-app/static/css/main.5441d4cd.css.map",
-    "main.34c7fc85.js.map": "/plague-app/static/js/main.34c7fc85.js.map"
+    "main.ef728ea6.js.map": "/plague-app/static/js/main.ef728ea6.js.map"
   },
   "entrypoints": [
     "static/css/main.5441d4cd.css",
-    "static/js/main.34c7fc85.js"
+    "static/js/main.ef728ea6.js"
   ]
 }
