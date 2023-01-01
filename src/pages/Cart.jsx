@@ -105,7 +105,7 @@ const Cart = () => {
           <div className="border-1 mx-20 md:mx-3 border-gray-500 shadow-md shadow-gray-500">
             <div className="flex p-6 text-xl font-thin text-birux justify-between items-center bg-white">
               <span className="w-1/2 text-left">Product</span>
-              <span>Delivery method</span>
+              <span className="md:hidden">Delivery method</span>
               <span className="w-1/6 text-right pr-4">Price</span>
             </div>
             {cartItems.map((cart) => {
@@ -122,7 +122,7 @@ const Cart = () => {
                       className="w-20 md:hidden"
                     ></img>
                     <div className="flex flex-col items-start mx-4">
-                      <span className="text-gray-700 text-2xl md:text-base">
+                      <span className="text-gray-700 text-2xl md:text-base md:text-left">
                         {title}
                       </span>
                       <span className="text-gray-700 my-2 text-sm md:text-xs">
@@ -155,14 +155,14 @@ const Cart = () => {
               </span>
             </div>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end md:flex-col">
             <span className="my-5 mx-4 text-xl text-gray-500">
               Create an order and I will connect with you in 24 hours to manage
               details
             </span>
             <button
               onClick={isLoggedIn ? addOrder : goToLog}
-              className="text-white text-2xl bg-biruz border-biruz border-2 rounded mx-20 my-3 px-8 py-2  hover:bg-birux"
+              className="text-white text-2xl md:text-base bg-biruz border-biruz border-2 rounded mx-20 my-3 px-8 py-2  hover:bg-birux"
             >
               Create an order now
             </button>

@@ -43,6 +43,23 @@ const Header = () => {
             <img src={logo} className="h-8" alt="logo" />
           </Link>
         </div>
+        <Link to="/plague-app/cart">
+          <div className="flex mx-3">
+            <FiShoppingCart
+              className="text-gray-400 cursor-pointer ml-8"
+              size={20}
+            />
+            <p
+              className={
+                CartTotalQuantity === 0
+                  ? 'invisible'
+                  : 'text-gray-400 -translate-y-1'
+              }
+            >
+              {CartTotalQuantity}
+            </p>
+          </div>
+        </Link>
       </div>
       {menuExpanded && <Menu setMenuExpanded={setMenuExpanded} />}
       <div className="flex justify-between h-16 px-10 items-center text-sm bg-white border-b-1 shadow-md fixed z-30 w-screen font-semibold md:hidden">
