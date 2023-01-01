@@ -20,10 +20,10 @@ const Courses = () => {
     <div>
       <div className=" h-screen bg-gradient-to-b from-bgYellow pt-24 px-16 md:h-fit md:pb-8 md:from-bgPlag">
         <div className="w-1/2 flex flex-col items-start md:w-full">
-          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600 md:text-xl md:pb-4">
+          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600 md:text-2xl md:pb-8">
             Lorem ipsum dolor, consectetur adipisicing elit.
           </h1>
-          <p className="text-left text-xl text-black py-12 md:text-sm md:py-4">
+          <p className="text-left text-xl text-black py-12 md:text-base md:py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
             nobis excepturi a aperiam. Suscipit, error! Vitae repellendus odit
             non veritatis.

@@ -21,13 +21,13 @@ const Solutions = () => {
     <>
       <div className="static bg-gradient-to-b from-bgPurple pt-36 flex mb-12 px-16">
         <div className="w-1/2 flex flex-col items-start md:w-full md:pb-8 overflow-hidden">
-          <h1 className="font-bold text-4xl text-left pb-12 border-b-2 border-b-gray-600 md:text-xl md:pb-4">
+          <h1 className="font-bold text-4xl text-left pb-12 border-b-2 border-b-gray-600 md:text-2xl md:pb-8">
             Grow up as a musician or improve yourself with Qdan!
           </h1>
-          <p className="text-left text-xl text-black pt-8 md:text-sm md:py-4">
+          <p className="text-left text-xl text-black pt-8 md:text-base md:py-4">
             Learn more effective with such a professional in the industry!
           </p>
-          <ul className="text-left text-xl text-black py-8 md:text-sm md:py-4">
+          <ul className="text-left text-xl text-black py-8 md:text-base md:py-4">
             <li className="flex items-center">
               <BsCheckLg color="green" size={20} className="mx-3" />
               something

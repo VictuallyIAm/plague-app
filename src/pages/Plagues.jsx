@@ -24,7 +24,7 @@ const Plags = () => {
     <>
       <div className="h-screen bg-gradient-to-b from-bgPlag pt-36 flex mb-12 px-16 ">
         <div className="w-1/2 flex flex-col items-start md:pb-8 md:w-full">
-          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600 md:text-xl md:pb-4">
+          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600 md:text-2xl md:pb-8">
             Everything for comfortable start and insured way
           </h1>
           <p className="text-left text-xl text-black py-12">

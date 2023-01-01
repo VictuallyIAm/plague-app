@@ -76,10 +76,10 @@ const SingleCourse = () => {
     <div>
       <div className=" h-screen bg-gradient-to-b from-bgYellow pt-24 px-16 md:from-bgPlag md:h-fit">
         <div className="w-1/2 flex flex-col items-start md:w-full md:pb-8">
-          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600 md:text-xl md:pb-4">
+          <h1 className="font-bold text-4xl text-left pb-16 border-b-2 border-b-gray-600 md:text-2xl md:pb-8">
             {course.title}
           </h1>
-          <ul className="text-left text-xl text-black py-8 md:text-sm md:py-4">
+          <ul className="text-left text-xl text-black py-8 md:text-base md:py-4">
             <li className="flex items-center">
               <BsCheckLg color="green" size={20} className="mx-3" />
               {course.desc1}
