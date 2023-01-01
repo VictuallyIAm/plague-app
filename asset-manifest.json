@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/plague-app/static/css/main.5441d4cd.css",
+    "main.js": "/plague-app/static/js/main.6b754bdb.js",
+    "static/media/homeImg.png": "/plague-app/static/media/homeImg.b8842cff658eee7a8876.png",
+    "static/media/course.png": "/plague-app/static/media/course.3211036b6a467f5d231a.png",
+    "static/media/studio.png": "/plague-app/static/media/studio.e9c0ea95a0ff0c026dcd.png",
+    "static/media/plagimg.png": "/plague-app/static/media/plagimg.dd268c33befaf2979a30.png",
+    "static/media/login.jpg": "/plague-app/static/media/login.9f156924e0da5a3be276.jpg",
+    "static/media/merch2.png": "/plague-app/static/media/merch2.ec936bd615a9afed2f93.png",
+    "static/media/map.png": "/plague-app/static/media/map.436a97fef5f7791fc053.png",
+    "static/media/hit.jpg": "/plague-app/static/media/hit.ec05e70e43fd6a57ad44.jpg",
+    "static/media/seq.jpg": "/plague-app/static/media/seq.97582dea440df4643e54.jpg",
+    "static/media/merch.jpg": "/plague-app/static/media/merch.7b65601fc9e0bb345ce6.jpg",
+    "static/media/theory.gif": "/plague-app/static/media/theory.1a535c619f759a9ac869.gif",
+    "static/media/best.jpg": "/plague-app/static/media/best.9b521d1b79727a62c152.jpg",
+    "static/media/aware.svg": "/plague-app/static/media/aware.bfcb8b9d603990de77b93687f73a687f.svg",
+    "index.html": "/plague-app/index.html",
+    "main.5441d4cd.css.map": "/plague-app/static/css/main.5441d4cd.css.map",
+    "main.6b754bdb.js.map": "/plague-app/static/js/main.6b754bdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5441d4cd.css",
+    "static/js/main.6b754bdb.js"
+  ]
+}
