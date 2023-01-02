@@ -6,7 +6,7 @@ export const plagues = [
         id: 6,
         type: 'plag',
         title: 'Omnisphere 2.8 Full Bundle',
-        desc: 'Последняя версия со всеми обновлениями,включая Trillian, Keyscape, Bob Moog, Sonic Extensions.',
+        desc: 'some description  description some description some description',
         imgUrl:
           'https://i.ibb.co/W5JZ1Gn/OMNI2-144c32ff8af719f9fc9450602f753310.jpg',
         price: 19.99,

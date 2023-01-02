@@ -40,7 +40,7 @@ const Cart = () => {
   }, [dispatch, cartItems])
 
   const goToLog = (e) => {
-    e.preventDefault(navigate('/login'))
+    e.preventDefault(navigate('/plague-app/login'))
     scrollToTop()
   }
   const addOrder = (e) => {
